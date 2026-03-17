@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>JobBoard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f4f7fb;
+}
+
+/* NAVBAR */
+
+nav{
+background:linear-gradient(90deg,#5f2c82,#49a09d);
+color:white;
+padding:15px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+nav h1{
+font-size:24px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:80px 20px;
+background:linear-gradient(120deg,#6a11cb,#2575fc);
+color:white;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.search-box{
+width:50%;
+margin:auto;
+display:flex;
+background:white;
+border-radius:30px;
+overflow:hidden;
+}
+
+.search-box input{
+flex:1;
+border:none;
+padding:15px;
+outline:none;
+}
+
+.search-box button{
+background:#2575fc;
+border:none;
+color:white;
+padding:15px 25px;
+cursor:pointer;
+}
+
+/* JOB LIST */
+
+.jobs{
+padding:60px 10%;
+}
+
+.jobs h2{
+text-align:center;
+margin-bottom:40px;
+color:#333;
+}
+
+.job-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.job-card{
+background:white;
+border-radius:12px;
+padding:25px;
+box-shadow:0 6px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.job-card:hover{
+transform:translateY(-8px);
+}
+
+.job-card h3{
+color:#2575fc;
+margin-bottom:10px;
+}
+
+.job-card p{
+color:#666;
+margin-bottom:10px;
+}
+
+.apply-btn{
+background:#2575fc;
+color:white;
+border:none;
+padding:10px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+footer{
+margin-top:60px;
+text-align:center;
+padding:25px;
+background:#111;
+color:white;
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<nav>
+<h1>🚀 JobBoard</h1>
+
+<div>
+<a href="#">Home</a>
+<a href="#">Jobs</a>
+<a href="#">Employers</a>
+<a href="#">Login</a>
+</div>
+</nav>
+
+
+<section class="hero">
+
+<h2>Find Your Dream Job</h2>
+
+<p>Search thousands of job opportunities from top companies</p>
+
+<div class="search-box">
+
+<input type="text" placeholder="Search job title, company...">
+
+<button>Search</button>
+
+</div>
+
+</section>
+
+
+
+<section class="jobs">
+
+<h2>🔥 Featured Jobs</h2>
+
+<div class="job-grid">
+
+
+<div class="job-card">
+
+<h3>Frontend Developer</h3>
+
+<p>Company: Google</p>
+
+<p>Location: Remote</p>
+
+<button class="apply-btn">Apply Now</button>
+
+</div>
+
+
+
+<div class="job-card">
+
+<h3>Backend Engineer</h3>
+
+<p>Company: Amazon</p>
+
+<p>Location: USA</p>
+
+<button class="apply-btn">Apply Now</button>
+
+</div>
+
+
+
+<div class="job-card">
+
+<h3>Data Scientist</h3>
+
+<p>Company: Microsoft</p>
+
+<p>Location: Canada</p>
+
+<button class="apply-btn">Apply Now</button>
+
+</div>
+
+
+
+<div class="job-card">
+
+<h3>UI/UX Designer</h3>
+
+<p>Company: Netflix</p>
+
+<p>Location: Remote</p>
+
+<button class="apply-btn">Apply Now</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 JobBoard | Built with ❤️</p>
+
+</footer>
+
+
+</body>
+</html>
